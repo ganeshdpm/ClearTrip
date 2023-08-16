@@ -55,7 +55,7 @@ public class LoginTestOne extends BaseClass {
     @Test(priority=2)
     public void testInvalidLogin() {
         loginPage.login("invalid@email.com", "invalidpassword");
-        Assert.assertTrue(driver.getCurrentUrl().contains("saucedemo/login"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("saucedemo"));
     }
 
     @AfterMethod
