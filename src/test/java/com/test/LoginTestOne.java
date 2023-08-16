@@ -28,20 +28,34 @@ public class LoginTestOne extends BaseClass {
     public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
+        driver.get("https://www.saucedemo.com/");
         loginPage = PageFactory.initElements(driver, LoginPage.class);
     }
 
-    @Test(priority=-1)
-    public void testValidLogin() {
-        loginPage.login("novfeelm@gmail.com", "password");
-        Assert.assertEquals(driver.getTitle(), "My Account");
+    @Test(priority=-2)
+    public void testValidLoginUser_1() {
+        loginPage.login("standard_user", "secret_sauce");
+        Assert.assertEquals(driver.getTitle(), "Swag Labs");
     }
-
+    @Test(priority=-1)
+    public void testValidLoginUser_2() {
+        loginPage.login("locked_out_user", "secret_sauce");
+        Assert.assertEquals(driver.getTitle(), "Swag Labs");
+    }
     @Test(priority=0)
+    public void testValidLoginUser_3() {
+        loginPage.login("problem_user", "secret_sauce");
+        Assert.assertEquals(driver.getTitle(), "Swag Labs");
+    }
+    @Test(priority=1)
+    public void testValidLoginUser_4() {
+        loginPage.login("performance_glitch_user", "secret_sauce");
+        Assert.assertEquals(driver.getTitle(), "Swag Labs");
+    }
+    @Test(priority=2)
     public void testInvalidLogin() {
         loginPage.login("invalid@email.com", "invalidpassword");
-        Assert.assertTrue(driver.getCurrentUrl().contains("route=account/login"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("saucedemo/login"));
     }
 
     @AfterMethod

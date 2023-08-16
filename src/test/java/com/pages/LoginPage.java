@@ -12,13 +12,13 @@ public class LoginPage extends BaseClass{
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id = "input-email")
+	@FindBy(id = "user-name")
     private WebElement emailInput;
 
-    @FindBy(id = "input-password")
+    @FindBy(id = "password")
     private WebElement passwordInput;
 
-    @FindBy(css = "input[type='submit'][value='Login']")
+    @FindBy(id = "login-button")
     private WebElement loginButton;
 
     public void login(String email, String password) {
