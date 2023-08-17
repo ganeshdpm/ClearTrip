@@ -1,101 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-16T16:41:39 IST" name="Default suite" finished-at="2023-08-16T16:42:50 IST" duration-ms="70473">
+  <suite started-at="2023-08-17T20:20:53 IST" name="Default suite" finished-at="2023-08-17T20:21:04 IST" duration-ms="10879">
     <groups>
     </groups>
-    <test started-at="2023-08-16T16:41:39 IST" name="Default test" finished-at="2023-08-16T16:42:50 IST" duration-ms="70473">
+    <test started-at="2023-08-17T20:20:53 IST" name="Default test" finished-at="2023-08-17T20:21:04 IST" duration-ms="10879">
       <class name="com.test.LoginTestOne">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:41:39 IST" name="setup" finished-at="2023-08-16T16:42:02 IST" duration-ms="22789" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.LoginTestOne@4b8ee4de]" started-at="2023-08-17T20:20:54 IST" name="setup" finished-at="2023-08-17T20:20:59 IST" duration-ms="5558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testValidLoginUser_1()[pri:-2, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:02 IST" name="testValidLoginUser_1" finished-at="2023-08-16T16:42:03 IST" duration-ms="802" status="PASS">
+        <test-method signature="fromTrip()[pri:-2, instance:com.test.LoginTestOne@4b8ee4de]" started-at="2023-08-17T20:20:59 IST" name="fromTrip" finished-at="2023-08-17T20:20:59 IST" duration-ms="68" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Economy')]"}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-FAL6AE0F', ip: '192.168.1.29', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Novfoukz\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 92dacf2ae41f4b7c49712bcb871ed856
+*** Element info: {Using=xpath, value=//span[contains(text(),'Economy')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Economy')]"}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-FAL6AE0F', ip: '192.168.1.29', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Novfoukz\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 92dacf2ae41f4b7c49712bcb871ed856
+*** Element info: {Using=xpath, value=//span[contains(text(),'Economy')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+at com.pages.FlightBookingPage.fromTrip(FlightBookingPage.java:53)
+at com.test.LoginTestOne.fromTrip(LoginTestOne.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLoginUser_1 -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:03 IST" name="teardown" finished-at="2023-08-16T16:42:04 IST" duration-ms="1152" status="PASS">
+        </test-method> <!-- fromTrip -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.LoginTestOne@4b8ee4de]" started-at="2023-08-17T20:20:59 IST" name="teardown" finished-at="2023-08-17T20:21:00 IST" duration-ms="985" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLoginUser_1 status=SUCCESS method=LoginTestOne.testValidLoginUser_1()[pri:-2, instance:com.test.LoginTestOne@27f981c6] output={null}]]]>
+                <![CDATA[[TestResult name=fromTrip status=FAILURE method=LoginTestOne.fromTrip()[pri:-2, instance:com.test.LoginTestOne@4b8ee4de] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:04 IST" name="setup" finished-at="2023-08-16T16:42:09 IST" duration-ms="5450" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.LoginTestOne@4b8ee4de]" started-at="2023-08-17T20:21:00 IST" name="setup" finished-at="2023-08-17T20:21:03 IST" duration-ms="3293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testValidLoginUser_2()[pri:-1, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:09 IST" name="testValidLoginUser_2" finished-at="2023-08-16T16:42:10 IST" duration-ms="606" status="PASS">
+        <test-method signature="toTrip()[pri:-1, instance:com.test.LoginTestOne@4b8ee4de]" started-at="2023-08-17T20:21:03 IST" name="toTrip" finished-at="2023-08-17T20:21:03 IST" duration-ms="33" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Economy')]"}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-FAL6AE0F', ip: '192.168.1.29', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Novfoukz\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65420}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5085b663fcf5cea1571efdf0915504f3
+*** Element info: {Using=xpath, value=//span[contains(text(),'Economy')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Economy')]"}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-FAL6AE0F', ip: '192.168.1.29', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Novfoukz\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65420}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5085b663fcf5cea1571efdf0915504f3
+*** Element info: {Using=xpath, value=//span[contains(text(),'Economy')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+at com.pages.FlightBookingPage.toTrip(FlightBookingPage.java:72)
+at com.test.LoginTestOne.toTrip(LoginTestOne.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLoginUser_2 -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:10 IST" name="teardown" finished-at="2023-08-16T16:42:12 IST" duration-ms="1810" status="PASS">
+        </test-method> <!-- toTrip -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.LoginTestOne@4b8ee4de]" started-at="2023-08-17T20:21:03 IST" name="teardown" finished-at="2023-08-17T20:21:04 IST" duration-ms="810" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLoginUser_2 status=SUCCESS method=LoginTestOne.testValidLoginUser_2()[pri:-1, instance:com.test.LoginTestOne@27f981c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:12 IST" name="setup" finished-at="2023-08-16T16:42:20 IST" duration-ms="8139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testValidLoginUser_3()[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:20 IST" name="testValidLoginUser_3" finished-at="2023-08-16T16:42:21 IST" duration-ms="654" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidLoginUser_3 -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:21 IST" name="teardown" finished-at="2023-08-16T16:42:21 IST" duration-ms="591" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidLoginUser_3 status=SUCCESS method=LoginTestOne.testValidLoginUser_3()[pri:0, instance:com.test.LoginTestOne@27f981c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:21 IST" name="setup" finished-at="2023-08-16T16:42:34 IST" duration-ms="12643" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testValidLoginUser_4()[pri:1, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:34 IST" name="testValidLoginUser_4" finished-at="2023-08-16T16:42:40 IST" duration-ms="5839" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidLoginUser_4 -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:40 IST" name="teardown" finished-at="2023-08-16T16:42:41 IST" duration-ms="793" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidLoginUser_4 status=SUCCESS method=LoginTestOne.testValidLoginUser_4()[pri:1, instance:com.test.LoginTestOne@27f981c6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:41 IST" name="setup" finished-at="2023-08-16T16:42:48 IST" duration-ms="7683" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testInvalidLogin()[pri:2, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:48 IST" name="testInvalidLogin" finished-at="2023-08-16T16:42:49 IST" duration-ms="686" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.test.LoginTestOne@27f981c6]" started-at="2023-08-16T16:42:49 IST" name="teardown" finished-at="2023-08-16T16:42:50 IST" duration-ms="677" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=LoginTestOne.testInvalidLogin()[pri:2, instance:com.test.LoginTestOne@27f981c6] output={null}]]]>
+                <![CDATA[[TestResult name=toTrip status=FAILURE method=LoginTestOne.toTrip()[pri:-1, instance:com.test.LoginTestOne@4b8ee4de] output={null}]]]>
               </value>
             </param>
           </params>
